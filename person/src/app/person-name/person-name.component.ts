@@ -2,7 +2,7 @@ import { Person } from "./person";
 /*
  * @Author: Hanfan Wang
  * @Date: 2020-05-11 18:43:35
- * @LastEditTime: 2020-05-11 19:40:41
+ * @LastEditTime: 2020-05-13 01:48:05
  */
 import { Component, OnInit } from "@angular/core";
 @Component({
