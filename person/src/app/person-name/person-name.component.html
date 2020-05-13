@@ -1,0 +1,23 @@
+<!--
+ * @Author: Hanfan Wang
+ * @Date: 2020-05-11 18:43:35
+ * @LastEditTime: 2020-05-11 19:41:25
+ -->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Person Class</h2>
+      <hr>
+      First Name: <input type="text" class="form-control" (input)="updateFirstName($event)" [value]="personFirstName">
+      Last Name: <input type="text" class="form-control" (input)="updateLastName($event)" [value]="personLastName">
+      <hr>
+      <button class="btn btn-primary" (click)="addPerson()">Add Person</button>
+      <hr>
+      <h3>Person List</h3>
+      <ul>
+        <li *ngFor="let person of personList">{{ person.id + ' ' + person.firstName + ' ' + person.lastName}} </li>
+      </ul>
+    </div>
+  </div>
+
+</div>
