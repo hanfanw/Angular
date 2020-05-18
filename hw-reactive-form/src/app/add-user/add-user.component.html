@@ -1,0 +1,96 @@
+<!--
+ * @Author: Hanfan Wang
+ * @Date: 2020-05-18 01:31:20
+ * @LastEditTime: 2020-05-18 02:01:46
+ -->
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <label>
+    Id:
+    <input type="number" formControlName="id">
+  </label>
+
+  <label>
+    Name:
+    <input type="text" formControlName="name">
+  </label>
+
+  <label>
+    Username:
+    <input type="text" formControlName="username">
+  </label>
+
+  <label>
+    Email:
+    <input type="text" formControlName="email">
+  </label>
+
+  <label>
+    Phone:
+    <input type="text" formControlName="phone" (click)="print()">
+  </label>
+
+  <label>
+    Website:
+    <input type="text" formControlName="website">
+  </label>
+
+  <div formGroupName="address">
+    <h3>Address</h3>
+
+    <label>
+      Street:
+      <input type="text" formControlName="street">
+    </label>
+
+    <label>
+      Suit:
+      <input type="text" formControlName="suit">
+    </label>
+
+    <label>
+      City:
+      <input type="text" formControlName="city">
+    </label>
+
+    <label>
+      Zip Code:
+      <input type="text" formControlName="zipcode">
+    </label>
+
+    <h4>Geolocation</h4>
+    <div formGroupName="geo">
+      <label>
+        Latitude:
+        <input type="text" formControlName="lat">
+      </label>
+
+      <label>
+        Longitude:
+        <input type="text" formControlName="lng">
+      </label>
+    </div>
+  </div>
+
+  <div formGroupName="company">
+
+    <h3>Company</h3>
+
+    <label>
+      Name:
+      <input type="text" formControlName="name">
+    </label>
+
+    <label>
+      CatchPhrase:
+      <input type="text" formControlName="catchPhrase">
+    </label>
+
+    <label>
+      BS:
+      <input type="text" formControlName="bs">
+    </label>
+  </div>
+
+  <button type="submit">Sign in</button>
+
+</form>
