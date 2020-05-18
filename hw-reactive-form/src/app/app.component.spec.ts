@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'hw-ngrx'`, () => {
+  it(`should have as title 'hw-reactive-form'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('hw-ngrx');
+    expect(app.title).toEqual('hw-reactive-form');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('hw-ngrx app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('hw-reactive-form app is running!');
   });
 });
