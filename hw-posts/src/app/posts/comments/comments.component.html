@@ -1,0 +1,23 @@
+<!--
+ * @Author: Hanfan Wang
+ * @Date: 2020-06-14 22:27:44
+ * @LastEditTime: 2020-06-14 22:49:10
+-->
+<table class="comments-table">
+  <tr>
+    <th>Email</th>
+    <th>Name</th>
+    <th>Body</th>
+  </tr>
+  <tr *ngFor="let comment of comments">
+    <td>
+      {{ comment.email | limitChar: 20}}
+    </td>
+    <td>
+      {{ comment.name | limitChar: 20}}
+    </td>
+    <td>
+      {{ comment.body| limitChar: 20}}
+    </td>
+  </tr>
+</table>
